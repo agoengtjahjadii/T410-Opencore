@@ -14,7 +14,7 @@
 				<key>Path</key>
 				<string>SSDT-USB-Reset.aml</string>
 			</dict>
-				<dict>
+			<dict>
 				<key>Comment</key>
 				<string>PMCR for native 300-series NVRAM</string>
 				<key>Enabled</key>
@@ -305,7 +305,6 @@
 				<key>BundlePath</key>
 				<string>ATAPortInjector.kext</string>
 			</dict>
-			
 			<dict>
 				<key>Comment</key>
 				<string></string>
@@ -867,7 +866,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=1	</string>
+				<string>-v keepsyms=1 debug=0x12a -liludbgall igdebug=0xff msgbuf=1048576</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
