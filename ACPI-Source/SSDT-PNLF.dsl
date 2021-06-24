@@ -25,14 +25,14 @@ DefinitionBlock("", "SSDT", 2, "ACDT", "PNLF", 0)
     External(RMCF.GRAN, IntObj)
     External(RMCF.FBTP, IntObj)
 
-    External(_SB.PCI0.PEG, DeviceObj)
-    Scope(_SB.PCI0.PEG)
+    External(_SB.PCI0.VID, DeviceObj)
+    Scope(_SB.PCI0.VID)
     {
         OperationRegion(RMP3, PCI_Config, 0, 0x14)
     }
 
     // For backlight control
-    Device(_SB.PCI0.PEG.PNLF)
+    Device(_SB.PCI0.VID.PNLF)
     {
      // Name(_ADR, Zero)
         Name(_HID, EisaId("APP0002"))
